@@ -3,7 +3,11 @@ import express, { Request, Response } from 'express';
 const app = express();
 
 app.get('/', (req: Request, res: Response) => {
-  res.json({ foo: 'bar2' });
+  res.json({ foo: 'bar' });
+});
+
+app.get('/test', (req: Request, res: Response) => {
+  res.json({ foo: 'test' });
 });
 
 app.listen(3000, () => {
