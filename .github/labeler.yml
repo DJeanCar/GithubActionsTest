@@ -1,0 +1,11 @@
+source:
+- all:
+  - changed-files:
+    - any-glob-to-any-file: 'src/**/*'
+    - all-globs-to-all-files: '!src/docs/*'
+
+feature:
+- head-branch: ['^feature', 'feature']
+
+release:
+- base-branch: 'main'
